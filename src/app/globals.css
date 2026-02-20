@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400;1,7..72,700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gold: #B8935A;
+    --gold-light: #D4B07A;
+    --gold-dark: #8A6A38;
+    --cream: #F5F0E8;
+    --navy: #0F1535;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark text-white font-montserrat;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-literata;
+  }
+}
+
+@layer components {
+  /* Botão dourado principal */
+  .btn-gold {
+    @apply inline-block px-8 py-4 font-montserrat font-semibold text-sm uppercase transition-all duration-300;
+    background: linear-gradient(135deg, #B8935A 0%, #D4B07A 50%, #8A6A38 100%);
+    color: #0A0A0A;
+    letter-spacing: 0.15em;
+  }
+  .btn-gold:hover {
+    background: linear-gradient(135deg, #D4B07A 0%, #B8935A 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(184, 147, 90, 0.4);
+  }
+
+  /* Texto com gradiente dourado */
+  .gold-text {
+    background: linear-gradient(135deg, #B8935A 0%, #D4B07A 60%, #8A6A38 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Linha decorativa dourada horizontal */
+  .gold-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #B8935A, transparent);
+  }
+
+  /* Faixa de topo dourada — estilo ID */
+  .gold-stripe-top::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #5a3e1e 0%, #D4B07A 30%, #B8935A 60%, #5a3e1e 100%);
+    z-index: 10;
+  }
+
+  /* Faixa de base dourada — estilo ID */
+  .gold-stripe-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #5a3e1e 0%, #D4B07A 30%, #B8935A 60%, #5a3e1e 100%);
+    z-index: 10;
+  }
+
+  /* ── Animações ── */
+
+  /* Barra dourada expande do centro */
+  @keyframes expandFromCenter {
+    from { transform: scaleX(0); opacity: 0; }
+    to   { transform: scaleX(1); opacity: 1; }
+  }
+
+  /* Fade + sobe suave */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Linha vertical cresce de cima pra baixo */
+  @keyframes growDown {
+    from { transform: scaleY(0); }
+    to   { transform: scaleY(1); }
+  }
+
+  /* Ponto diamante aparece com pop */
+  @keyframes dotPop {
+    0%   { transform: rotate(45deg) scale(0); opacity: 0; }
+    65%  { transform: rotate(45deg) scale(1.4); }
+    100% { transform: rotate(45deg) scale(1); opacity: 1; }
+  }
+
+  /* Faixa do hero desliza das bordas */
+  @keyframes stripeSlide {
+    from { opacity: 0; transform: scaleX(0.4); }
+    to   { opacity: 1; transform: scaleX(1); }
+  }
+
+  /* Classes utilitárias de animação */
+  .anim-gold-line {
+    transform-origin: center;
+    animation: expandFromCenter 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .anim-fade-up {
+    opacity: 0;
+    animation: fadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .anim-stripe {
+    transform-origin: center;
+    animation: stripeSlide 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  /* Padding padrão de seção */
+  .section-padding {
+    @apply px-6 py-20 md:px-16 md:py-28 lg:px-24;
+  }
+
+  /* Seção clara (cream) */
+  .section-light {
+    background-color: #F5F0E8;
+    color: #0F1535;
+  }
+
+  /* Label de seção */
+  .section-label {
+    @apply font-montserrat text-xs tracking-[0.35em] uppercase mb-6;
+    color: #B8935A;
+  }
+}
