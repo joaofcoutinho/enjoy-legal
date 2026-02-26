@@ -16,7 +16,7 @@ export default function Header() {
       </a>
 
       {/* CTA mini */}
-      <a href="#oferta" className="hidden md:block btn-gold text-xs py-3 px-6">
+      <a href="https://bit.ly/enjoy-imersao-legado" target="_blank" rel="noopener noreferrer" className="hidden md:block btn-gold text-xs py-3 px-6">
         Garantir Vaga
       </a>
     </header>

@@ -121,7 +121,7 @@ export default function HeroSection() {
         </div>
 
         {/* CTA */}
-        <a href="#oferta" className="btn-gold text-sm">
+        <a href="https://bit.ly/enjoy-imersao-legado" target="_blank" rel="noopener noreferrer" className="btn-gold text-sm">
           Quero Construir Meu Legado
         </a>
 

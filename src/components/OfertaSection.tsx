@@ -109,7 +109,7 @@ export default function OfertaSection() {
         </p>
 
         {/* CTA principal */}
-        <a href="#" className="btn-gold text-sm inline-block mb-4">
+        <a href="https://bit.ly/enjoy-imersao-legado" target="_blank" rel="noopener noreferrer" className="btn-gold text-sm inline-block mb-4">
           Garantir Minha Vaga na Imersão
         </a>
 
