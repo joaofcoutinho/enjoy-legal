@@ -99,13 +99,13 @@ export default function OfertaSection() {
           </p>
           <p className="font-literata text-5xl md:text-6xl text-white font-light">
             R${" "}
-            <span className="gold-text font-semibold">2.000</span>
+            <span className="gold-text font-semibold">949</span>
             <span className="text-2xl text-gray-400">,00</span>
           </p>
         </div>
 
         <p className="font-montserrat text-xs text-gray-500 mb-12 tracking-wider">
-          12 de Março de 2026 · Coco Bambu, Vila Velha/ES
+          17 de Março de 2026 · Coco Bambu, Vitória
         </p>
 
         {/* CTA principal */}

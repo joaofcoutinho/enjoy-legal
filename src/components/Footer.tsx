@@ -17,7 +17,7 @@ export default function Footer() {
         </p>
 
         <p className="font-montserrat text-xs text-gray-600">
-          12 de Março de 2026 · Vila Velha/ES
+          17 de Março de 2026 · Vitória
         </p>
       </div>
     </footer>

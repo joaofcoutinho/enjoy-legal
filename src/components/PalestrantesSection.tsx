@@ -9,15 +9,17 @@ const palestrantes = [
       "Gustavo Fonseca trará a visão prática de como transformar a sua operação técnica em uma estrutura empresarial sólida, focada em eficiência, clareza nas decisões e crescimento sustentável.",
     numero: "01",
     foto: "/gustavo fonseca (2).png",
+    posicao: "object-top",
   },
   {
-    nome: "Felipe Lomeu",
-    titulo: "Growth Marketing",
+    nome: "Wander Miranda",
+    titulo: "Alavancas de Crescimento",
     subtitulo: "Para Advogados e Contadores.",
     conteudo:
-      "Felipe Lomeu apresenta as estratégias de crescimento acelerado e posicionamento digital para atrair os melhores clientes e escalar a sua autoridade no mercado jurídico e contábil.",
+      "Wander Miranda revela os mecanismos e estratégias para destravar o crescimento do seu escritório, focando em alavancas práticas que geram escala, previsibilidade e resultados exponenciais.",
     numero: "02",
-    foto: "/felipe lomeu (2).png",
+    foto: "/wander.jpeg",
+    posicao: "object-center",
   },
 ];
 
@@ -75,7 +77,7 @@ export default function PalestrantesSection() {
                   src={p.foto}
                   alt={p.nome}
                   fill
-                  className="object-cover object-top"
+                  className={`object-cover ${p.posicao}`}
                   style={{ filter: "grayscale(20%) brightness(0.88) contrast(1.05)" }}
                   sizes="(max-width: 768px) 100vw, 320px"
                 />

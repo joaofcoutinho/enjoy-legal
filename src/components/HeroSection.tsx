@@ -115,9 +115,9 @@ export default function HeroSection() {
 
         {/* Data e Local */}
         <div className="flex items-center justify-center gap-3 mb-12 font-montserrat text-xs text-white/65 tracking-widest uppercase">
-          <span>12 de Março de 2026</span>
+          <span>17 de Março de 2026</span>
           <span style={{ color: "#B8935A" }}>·</span>
-          <span>Coco Bambu — Vila Velha/ES</span>
+          <span>Coco Bambu — Vitória</span>
         </div>
 
         {/* CTA */}

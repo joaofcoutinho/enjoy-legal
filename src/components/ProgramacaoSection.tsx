@@ -19,8 +19,8 @@ const programacao = [
   },
   {
     hora: "14h00",
-    titulo: "Palestra 2: Growth Marketing",
-    subtitulo: "Felipe Lomeu",
+    titulo: "Palestra 2: Alavancas de Crescimento",
+    subtitulo: "Wander Miranda",
     destaque: true,
   },
   {
@@ -85,7 +85,7 @@ export default function ProgramacaoSection() {
                 transition: "opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s",
               }}
             >
-              12 de Março de 2026
+              17 de Março de 2026
             </p>
             <div
               className="h-px flex-1 max-w-16"
@@ -116,7 +116,7 @@ export default function ProgramacaoSection() {
           {/* Linha vertical — cresce de cima pra baixo */}
           <div
             ref={lineRef}
-            className="absolute left-[4.5rem] md:left-24 top-0 bottom-0 w-px"
+            className="absolute left-3 top-0 bottom-0 w-px"
             style={{
               background: "linear-gradient(180deg, transparent, #B8935A 10%, #B8935A 90%, transparent)",
               opacity: 0.35,
@@ -130,23 +130,13 @@ export default function ProgramacaoSection() {
             {programacao.map((item, index) => (
               <div
                 key={index}
-                className="relative flex items-start gap-6 md:gap-10 py-6"
+                className="relative flex items-start gap-6 py-6"
                 style={{
                   opacity: visible ? 1 : 0,
                   transform: visible ? "translateX(0)" : "translateX(-16px)",
                   transition: `opacity 0.6s ease ${0.6 + index * 0.1}s, transform 0.6s cubic-bezier(0.16,1,0.3,1) ${0.6 + index * 0.1}s`,
                 }}
               >
-                {/* Hora */}
-                <div className="flex-shrink-0 w-16 md:w-20 text-right">
-                  <span
-                    className="font-montserrat text-sm font-medium"
-                    style={{ color: "#B8935A" }}
-                  >
-                    {item.hora}
-                  </span>
-                </div>
-
                 {/* Ponto diamante — pop individual */}
                 <div className="flex-shrink-0 flex items-center justify-center mt-1">
                   <div

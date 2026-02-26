@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Imersão Legado | Enjoy Legal",
   description:
-    "Mentalidade, Posicionamento e Resultado: os três pilares para o reconhecimento de advogados e contadores. 12 de Março de 2026 · Coco Bambu - Vila Velha/ES",
+    "Mentalidade, Posicionamento e Resultado: os três pilares para o reconhecimento de advogados e contadores. 17 de Março de 2026 · Coco Bambu - Vitória",
   openGraph: {
     title: "Imersão Legado | Enjoy Legal",
     description:
